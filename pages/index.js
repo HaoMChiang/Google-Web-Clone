@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null);
+  const btn2Text = "I'm Feeling Lucky";
 
   const search = (e) => {
     e.preventDefault();
@@ -63,7 +64,7 @@ export default function Home() {
             Google Search
           </button>
           <button onClick={search} className="btn">
-            I'm Feeling Lucky
+            {btn2Text}
           </button>
         </div>
       </form>
